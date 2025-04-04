@@ -19,5 +19,6 @@ while True:
             
         else:
             print(f"You win the number is {guessedNumber}")
+            print(f"You had {lives} lives left")
             time.sleep(2)
             break
