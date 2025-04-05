@@ -1,17 +1,18 @@
 import random, os, time
 
 #list coming and showing things
-guessedNumber = random.randint(1,10)
 lives = 10
 
 lists = []
 for i in range(10):
     lists.append(i)
+    random.shuffle(lists)
+
+guessedNumber = random.choice(lists)
 
 try:
     while True:
         print("Guess the number")
-        lists.append(guessedNumber)
         if guessedNumber == i:
             lists.remove(i)
         print(lists)
